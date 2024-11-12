@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Link from "next/link"; // Import Link from Next.js
 
+
+
 const HomePage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -77,18 +79,6 @@ const HomePage = () => {
         {/* Background Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black opacity-95 pointer-events-none"></div>
 
-        {/* Decorative Circles with Subtle Effect */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Smallest Circle */}
-          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-yellow-500 opacity-25 rounded-full blur-3xl animate-pulse-smooth absolute top-10 left-10 sm:left-20 md:left-24"></div>
-          {/* Slightly Larger Circle */}
-          <div className="w-14 h-14 sm:w-18 sm:h-18 md:w-24 md:h-24 bg-yellow-400 opacity-20 rounded-full blur-2xl animate-pulse-smooth absolute top-32 sm:top-48 right-10 sm:right-20 md:right-32"></div>
-          {/* Small Circle */}
-          <div className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-yellow-300 opacity-15 rounded-full blur-md animate-pulse-smooth absolute bottom-20 sm:bottom-24 left-4 sm:left-10 md:left-12"></div>
-          {/* Extra Small Circle */}
-          <div className="w-14 h-14 sm:w-18 sm:h-18 md:w-24 md:h-24 bg-yellow-600 opacity-20 rounded-full blur-lg animate-pulse-smooth absolute bottom-8 sm:bottom-10 right-4 sm:right-20 md:right-24"></div>
-        </div>
-
         {/* Main Content */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-snug md:leading-tight text-white animate-slideInLeft z-10">
           Design That <span className="text-yellow-400">Ignites</span>
@@ -106,34 +96,13 @@ const HomePage = () => {
         </Link>
       </section>
 
-      {/* Styles for Subtle Pulse Effect */}
-      <style jsx>{`
-        @keyframes pulse-smooth {
-          0% {
-            transform: scale(1);
-            opacity: 0.15;
-          }
-          50% {
-            transform: scale(1.2);
-            opacity: 0.5;
-          }
-          100% {
-            transform: scale(1);
-            opacity: 0.15;
-          }
-        }
-
-        .animate-pulse-smooth {
-          animation: pulse-smooth 3s infinite ease-in-out;
-        }
-      `}</style>
 
       {/* Behind UCreates Section */}
       <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-8 bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white flex flex-col items-center lg:flex-row animate-scaleUp">
         {/* Image Container */}
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0 flex flex-col items-center">
           <img
-            src="UMER2.jpg" // Replace with the actual path to Mr. Umer's image
+            src="/Images/UMER2.jpg" // Replace with the actual path to Mr. Umer's image
             alt="Mr. Umer"
             className="w-2/3 sm:w-3/4 md:w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:brightness-110 hover:shadow-2xl"
             style={{
