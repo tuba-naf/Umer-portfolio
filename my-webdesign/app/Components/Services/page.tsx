@@ -73,15 +73,16 @@ const Services: React.FC = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Section */}
-      <header className="flex justify-between items-center p-8 bg-gray-800">
-        <h1 className="text-4xl font-bold tracking-wider">
-          <span className="text-white">U</span>
-          <span className="text-teal-400">C</span>
-          <span className="text-white">reates</span>
-        </h1>
+      <header className="flex flex flex-wrap justify-between items-center p-8 bg-gray-800">
+      <h1 className="text-3xl sm:text-4xl font-bold tracking-wide sm:tracking-wider lg:tracking-widest flex flex-wrap justify-center items-center">
+  <span className="text-white">U</span>
+  <span className="text-teal-400">C</span>
+  <span className="text-white">reates</span>
+</h1>
+
         {/* Hamburger Menu for Mobile */}
         <div className="lg:hidden" onClick={toggleMenu}>
-          <div className="space-y-2 cursor-pointer transition-transform duration-300 transform">
+          <div className="space-y-2 cursor-pointer transition-transform duration-300 transform ">
             <span
               className={`block w-8 h-1 bg-teal-400 transition-all duration-300 ${
                 menuOpen ? "rotate-45 translate-y-2" : ""
@@ -106,7 +107,7 @@ const Services: React.FC = () => {
               <Link href="/">Home</Link>
               <span className="absolute -bottom-1 left-0 h-0.5 w-full bg-yellow-400 transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </li>
-            <li className="hover:text-yellow-400 cursor-pointer transition duration-300 relative">
+            <li className="hover:text-yellow-400 cursor-pointer transition duration-300 relative ">
               <Link href="/Components/Services">Services</Link>
               <span className="absolute -bottom-1 left-0 h-0.5 w-full bg-yellow-400 transition-transform duration-300 transform scale-x-0 group-hover:scale-x-100"></span>
             </li>
@@ -136,10 +137,11 @@ const Services: React.FC = () => {
       <div className="py-20 px-8 lg:px-24 text-gray-100">
         {!selectedService ? (
           <>
-            <h1 className="text-5xl font-extrabold text-center mb-12 text-white">
-              Our Services
-            </h1>
-            <p className="text-xl text-center max-w-3xl mx-auto mb-24 text-gray-300">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12 text-white">
+  Our Services
+</h1>
+
+            <p className="text-xl text-center max-w-6xl mx-auto mb-24 text-gray-300">
               Explore our range of creative services to elevate your brand.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">

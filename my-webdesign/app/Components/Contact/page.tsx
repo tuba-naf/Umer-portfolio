@@ -5,9 +5,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-10">
       <h1 className="text-5xl font-bold text-center text-gray-800 mb-10">Contact Us</h1>
-      <p className="text-xl text-center max-w-4xl mx-auto text-gray-600 mb-6">
-        We would love to hear from you! Whether you're interested in working together or have a question, feel free to get in touch with us.
-      </p>
+      <p>{`We would love to hear from you! Whether you're interested in working together or have a question, feel free to get in touch with us.`}</p>
 
       <form className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
         <div className="mb-6">
