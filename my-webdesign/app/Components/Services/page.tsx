@@ -73,7 +73,7 @@ const Services: React.FC = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Section */}
-      <header className="flex flex flex-wrap justify-between items-center p-8 bg-gray-800">
+      <header className="flex flex flex-wrap justify-between items-center p-8 bg-gray-800 border-b-2 border-gray-700">
       <h1 className="text-3xl sm:text-4xl font-bold tracking-wide sm:tracking-wider lg:tracking-widest flex flex-wrap justify-center items-center">
   <span className="text-white">U</span>
   <span className="text-teal-400">C</span>
@@ -125,26 +125,26 @@ const Services: React.FC = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-yellow-400 cursor-pointer transition duration-300">
-            <Link href="Components/Services">Services</Link>
+            <Link href="/Components/Services">Services</Link>
           </li>
           <li className="hover:text-yellow-400 cursor-pointer transition duration-300">
-            <Link href="Components/Contact">Contact</Link>
+            <Link href="/Components/Contact">Contact</Link>
           </li>
         </ul>
       </nav>
 
       {/* Main Services Content */}
-      <div className="py-20 px-8 lg:px-24 text-gray-100">
+      <div className="py-10 px-6 sm:px-8 lg:px-24 text-gray-100 ">
         {!selectedService ? (
           <>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12 text-white">
   Our Services
 </h1>
 
-            <p className="text-xl text-center max-w-6xl mx-auto mb-24 text-gray-300">
+            <p className="text-base sm:text-lg md:text-xl text-center max-w-6xl mx-auto mb-8 text-gray-300">
               Explore our range of creative services to elevate your brand.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
               {services.map((service) => (
                 <div
                   key={service.id}
@@ -181,28 +181,28 @@ const Services: React.FC = () => {
             </div>
           </>
         ) : (
-          <div className="min-h-screen">
+          <div className="min-h-screen flex items-center px-4 sm:px-6 lg:px-8 bg-black text-sm sm:text-sm lg:text-lg ">
             {services
               .filter((service) => service.id === selectedService)
               .map((service) => (
                 <div key={service.id}>
                   <button
-                    className="text-gray-400 underline mb-6"
+                    className="text-gray-400 underline mb-4"
                     onClick={() => setSelectedService(null)}
                   >
                     ← Back to Services
                   </button>
-                  <h1 className="text-5xl font-extrabold mb-4 text-white">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-left text-white leading-tight">
                     {service.title}
                   </h1>
-                  <p className="text-lg mb-6 text-gray-300">
+                  <p className="text-lg mb-6 text-gray-300 sm:text-4xl font-extrabold ">
                     {service.details}
                   </p>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:text-4xl font-extrabold ">
                     {service.images.map((image, index) => {
                       if (image.endsWith(".mp4")) {
                         return (
-                          <div key={index} className="w-full h-auto">
+                          <div key={index} className="w-full h-auto ">
                             <video
                               controls
                               className="w-full h-auto object-cover rounded-md"

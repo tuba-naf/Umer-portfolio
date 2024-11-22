@@ -3,9 +3,9 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-10">
+    <div className="min-h-screen bg-gray-100 p-10 ">
       <h1 className="text-5xl font-bold text-center text-gray-800 mb-10">Contact Us</h1>
-      <p>{`We would love to hear from you! Whether you're interested in working together or have a question, feel free to get in touch with us.`}</p>
+      <div className="text-center mb-5">{`We would love to hear from you! Whether you're interested in working together or have a question, feel free to get in touch with us.`}</div>
 
       <form className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
         <div className="mb-6">

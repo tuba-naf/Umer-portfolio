@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Section */}
-      <header className="flex flex flex-wrap justify-between items-center p-8 bg-gray-800">
+      <header className="flex flex flex-wrap justify-between items-center p-8 bg-gray-800 border-b-2 border-gray-700">
       <h1 className="text-3xl sm:text-4xl font-bold tracking-wide sm:tracking-wider lg:tracking-widest flex flex-wrap justify-center items-center">
   <span className="text-white">U</span>
   <span className="text-teal-400">C</span>
@@ -63,7 +63,7 @@ const HomePage = () => {
 
       {/* Mobile Navigation Menu */}
       <nav className={`lg:hidden ${menuOpen ? "block" : "hidden"}`}>
-        <ul className="flex flex-col space-y-4 items-center bg-gray-800 p-6">
+        <ul className="flex flex-col space-y-4 items-center bg-gray-800 p-6" >
           <li className="hover:text-yellow-400 cursor-pointer transition duration-300 ">
             <Link href="/">Home</Link>
           </li>
@@ -104,6 +104,7 @@ const HomePage = () => {
             Explore Our Work
           </button>
         </Link>
+        
       </section>
 
 
@@ -175,7 +176,7 @@ const HomePage = () => {
               title: "Proven Expertise",
               description:
                 "UCreates brings an expert touch to branding, UI/UX, and print design, delivering results that captivate.",
-              bgColor: "bg-green-700",
+              bgColor: "bg-green-600",
             },
             {
               title: "Cutting-Edge Tools",
@@ -187,13 +188,13 @@ const HomePage = () => {
               title: "Reliability & Quality",
               description:
                 "We prioritize quality and consistency, ensuring timely delivery and results that exceed expectations, every time.",
-              bgColor: "bg-yellow-700",
+              bgColor: "bg-yellow-600",
             },
             {
               title: "End-to-End Solutions",
               description:
                 "From concept to completion, UCreates provides comprehensive design solutions that cover every aspect of your brand’s visual identity.",
-              bgColor: "bg-indigo-700",
+              bgColor: "bg-purple-700",
             },
           ].map((service, index) => (
             <div
