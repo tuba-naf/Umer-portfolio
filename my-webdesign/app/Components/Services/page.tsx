@@ -18,7 +18,7 @@ const services = [
   },
   {
     id: "You-Tube Thumbnails",
-    title: "You-Tube Thumbnails",
+    title: "YouTube Thumbnails",
     description: "Enhancing user experience.",
     images: [
       "/Images/YT1.png",
@@ -54,7 +54,7 @@ const services = [
   },
   {
     id: "Advertising",
-    title: "Advertising",
+    title: "Advertisement",
     description: "Attention-capturing designs for advertising.",
     images: ["/images/adv1.png"],
     details:
@@ -73,7 +73,7 @@ const Services: React.FC = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Section */}
-      <header className="flex flex flex-wrap justify-between items-center p-8 bg-gray-800 border-b-2 border-gray-700">
+      <header className="flex flex flex-wrap justify-between items-center p-8 bg-gray-900 border-b-2 border-gray-700">
       <h1 className="text-3xl sm:text-4xl font-bold tracking-wide sm:tracking-wider lg:tracking-widest flex flex-wrap justify-center items-center">
   <span className="text-white">U</span>
   <span className="text-teal-400">C</span>
@@ -137,7 +137,7 @@ const Services: React.FC = () => {
       <div className="py-10 px-6 sm:px-8 lg:px-24 text-gray-100 ">
         {!selectedService ? (
           <>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-12 text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 text-white">
   Our Services
 </h1>
 
@@ -192,13 +192,13 @@ const Services: React.FC = () => {
                   >
                     ← Back to Services
                   </button>
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-left text-white leading-tight">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold  text-left text-white leading-tight">
                     {service.title}
                   </h1>
-                  <p className="text-lg mb-6 text-gray-300 sm:text-4xl font-extrabold ">
+                  <p className="lg:text-1xl mt-7 mb-7 text-gray-300 sm:text-2xl">
                     {service.details}
                   </p>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:text-4xl font-extrabold ">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:text-4xl  ">
                     {service.images.map((image, index) => {
                       if (image.endsWith(".mp4")) {
                         return (
@@ -239,8 +239,7 @@ const Services: React.FC = () => {
           <div>
             <h2 className="text-xl font-bold mb-4">About UCreates</h2>
             <p className="text-sm">
-              UCreates is dedicated to bringing you the best in creative design
-              and innovation.
+              UCreates is dedicated to serving you the best in creative design ideas.
             </p>
           </div>
 

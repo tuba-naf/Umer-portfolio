@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Section */}
-      <header className="flex flex flex-wrap justify-between items-center p-8 bg-gray-800 border-b-2 border-gray-700">
+      <header className="flex flex flex-wrap justify-between items-center p-8 bg-gray-900 border-b-2 border-gray-700">
       <h1 className="text-3xl sm:text-4xl font-bold tracking-wide sm:tracking-wider lg:tracking-widest flex flex-wrap justify-center items-center">
   <span className="text-white">U</span>
   <span className="text-teal-400">C</span>
@@ -153,7 +153,7 @@ const HomePage = () => {
       </section>
 
       {/* Why Choose UCreates Section */}
-      <section className="py-10 px-4 sm:px-6 md:px-8 bg-gray-900 text-white">
+      <section className="py-10 px-4 sm:px-6 md:px-8 bg-gray-950 text-white">
         <h3 className="text-4xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-10 text-white animate-scaleUp animate-pulse">
           Why Choose UCreates
         </h3>
@@ -182,7 +182,7 @@ const HomePage = () => {
               title: "Cutting-Edge Tools",
               description:
                 "Our designers stay ahead with the latest tools and trends, ensuring your brand always has a modern, polished edge.",
-              bgColor: "bg-red-700",
+              bgColor: "bg-orange-700",
             },
             {
               title: "Reliability & Quality",
@@ -219,8 +219,7 @@ const HomePage = () => {
           <div>
             <h2 className="text-xl font-bold mb-4">About UCreates</h2>
             <p className="text-sm">
-              UCreates is dedicated to bringing you the best in creative design
-              and innovation.
+              UCreates is dedicated to serving you the best in creative design ideas.
             </p>
           </div>
 
