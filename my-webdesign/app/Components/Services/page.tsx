@@ -32,7 +32,7 @@ const services = [
     id: "SocialMediaGraphics",
     title: "Social Media Graphics",
     description: "Creative social media graphics.",
-    images: ["/images/SMG4.png", "/images/SMG3.png", "/images/SMG5.png"],
+    images: ["/Images/SMG4.png", "/Images/SMG3.png", "/Images/SMG5.png"],
     details:
       "Our Social Media Graphics service provides custom-made designs that enhance your online presence...",
   },
@@ -56,7 +56,7 @@ const services = [
     id: "Advertising",
     title: "Advertisement",
     description: "Attention-capturing designs for advertising.",
-    images: ["/images/adv1.png"],
+    images: ["/Images/adv1.png"],
     details:
       "Our advertising design service focuses on creating impactful designs for print, digital, and social media ads...",
   },
